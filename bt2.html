@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature = function (value,doC,doF) {
+        this.value = value;
+        this.doF = doF;
+        this.doC = doC;
+
+        this.getValue = function () {
+            return this.value;
+        }
+        this.getDoC = function () {
+            return this.doC=25;
+        }
+        this.getDoF = function () {
+            return math= 9 * doC / 5 + 32;
+        }
+
+
+        this.setValue = function (value) {
+            this.value = value;
+        }
+        this.setdoC = function (doC) {
+            this.doC = doC;
+        }
+        this.setdoF = function (doF) {
+            this.doF = doF
+        }
+    };
+    let iTemperature = new Temperature(0,25,0);
+    let doF = iTemperature.getDoF();
+    let doC = iTemperature.getDoC();
+
+
+    alert(doF);
+
+</script>
+</body>
+</html>

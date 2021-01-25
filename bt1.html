@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="900px" height="450px" style="border:1px" co>
+<script>
+    let Rectangle = function (width,height,dien,CV){
+        this.width = width;
+        this.height = height;
+        this.dien = dien;
+        this.CV = CV;
+
+        this.getWidth = function () {
+            return this.width;
+        }
+        this.getHeight = function () {
+            return this.height;
+        }
+        this.getDien = function () {
+            return math= width* height;
+        }
+        this.getCV = function () {
+            return math = 2*(height+width);
+        }
+
+        this.setWidth = function (width) {
+            this.width = width;
+        }
+        this.setHeight = function (height) {
+            this.height = height;
+        }
+        this.setdien = function (dien ) {
+            this.dien = dien;
+        }
+        this.setCV = function (CV) {
+            this.CV = CV;
+        }
+    };
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+
+    var grd = ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    ctx.fillStyle = grd;
+    ctx.fillRect(600,200,350,150);
+
+    let tinh = new Rectangle (6,3);
+    let width = tinh.getWidth();
+    let height = tinh.getHeight();
+    let dien = tinh.getDien();
+    let CV = tinh.getCV();
+    alert("dien tich :" +dien );
+    alert("chu vi :" + CV)
+
+</script>
+</body>
+</html>
